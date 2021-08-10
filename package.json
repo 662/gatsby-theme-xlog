@@ -1,0 +1,24 @@
+{
+  "name": "gatsby-theme-xlog",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "pre-commit": "lint-staged"
+  },
+  "devDependencies": {
+    "husky": "^7.0.1",
+    "lerna": "^4.0.0",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2"
+  },
+  "dependencies": {},
+  "lint-staged": {
+    "*.{js,json,css,md,mdx}": [
+      "prettier --write"
+    ]
+  }
+}
